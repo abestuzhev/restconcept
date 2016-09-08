@@ -2,7 +2,9 @@
 $(window).bind('load', function() {
 
     $('.js-dotted').dotdotdot();
+    jQuery("div#slider1").codaSlider()
 });
+
 
 $(function(){
 
@@ -62,7 +64,15 @@ $(document).ready(function(){
 		cssEase: 'linear'
 	});
 
-  $('.slide-gallery').slick({
+  var $status = $('.slider_tag span');
+  var $slickElement = $('.slide-gallery');
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+      //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+      var i = (currentSlide ? currentSlide : 0) + 1;
+      $status.text(i + ' из ' + slick.slideCount);
+  });
+
+  $slickElement.slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
 		dots: false,
