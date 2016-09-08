@@ -1,0 +1,25 @@
+{
+  "name": "restconcept",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Aleksey <aleksey.bestuzhev@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^4.2.0",
+    "jquery": "^3.1.0",
+    "jQuery.dotdotdot": "dotdotdot#^1.8.3",
+    "slick": "*",
+    "slick-carousel": "^1.6.0"
+  }
+}

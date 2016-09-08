@@ -1,0 +1,151 @@
+
+//menu
+.m-menu {
+  position: relative;
+  bottom: 0;
+  left: 0;
+
+  .toggleMenu {
+    text-align: center;
+    font-size: 15px;
+    width: 100%;
+    padding: 12px 4px;
+    color: #fff;
+
+  }
+}
+
+.m-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, .4);
+
+  @media all and (max-width: 460px) {
+    position: static;
+    bottom:0;
+  }
+}
+
+
+.menu-list {
+
+  li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  &-link {
+     position: relative;
+     display: block;
+     padding: 12px 20px;
+     color: $white-color;
+
+     &:hover {
+       background-color: #000;
+     }
+  }
+
+  @media all and (max-width: 980px) {
+    .menu-list-link {
+      padding: 12px 4px;
+    }
+  }
+
+  @media all and (max-width: 825px) {
+    text-align: center;
+  }
+
+  @media all and (max-width: 460px) {
+    li {
+      display: block;
+    }
+  }
+}
+
+.h-header-menu {
+  position: static;
+
+  .menu-list-link {
+
+    &:hover {
+      background-color: $expressive-color;
+    }
+  }
+}
+
+.menu-list > li.hover > ul {
+    left: 0;
+}
+
+.submenu-list {
+  text-align: left;
+  box-sizing: border-box;
+  position: absolute;
+  left: -9999px;
+  z-index: 100;
+  width: 100%;
+  background: $white-color;
+  padding: 30px 33px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  @media all and (max-width: 460px) {
+    display: none;
+    position: static;
+  }
+
+  &-layout {
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: top;
+
+    @media all and (max-width: 460px) {
+      width: 100%;
+      margin-right: 0;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  li {
+     display: block;
+    margin-bottom: 10px;
+
+     a {
+       display: inline-block;
+       color: $font-color;
+       font-size: $font-size-default;
+       border-bottom: 1px dotted #000080;
+       position: relative;
+       @extend %transition;
+
+       &::after {
+         content: '';
+         display: none;
+         position: absolute;
+         top: 30%;
+         left: 0;
+         width: 10px;
+         height: 7px;
+         background-color: #000;
+         background: url("../img/call-icon.png") no-repeat 50% 50%;
+       }
+
+       &:hover {
+         color: $expressive-color;
+         transform: translateX(19px);
+       }
+
+       &:hover::after{
+         display: block;
+         left: -19px;
+
+       }
+     }
+   }
+}
