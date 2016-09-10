@@ -243,15 +243,11 @@ header {
   &-title {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 36px;
-    // text-align: center;
     text-transform: uppercase;
     color: $white-color;
     margin: 0;
     margin-bottom: 15px;
 
-    @media all and (max-width: 580px) {
-      // font-size: 32px;
-    }
   }
 
   &-logo {
@@ -318,7 +314,6 @@ header {
   &-email {
     position: relative;
     padding-left:16px;
-    //padding-top: 4px;
 
     &::before {
       content: "";
@@ -467,15 +462,13 @@ header {
 }
 
 .m-breadcrumbs-home {
-
-  // text-align: center;
   margin-top: 14px;
 
   .m-breadcrumbs-title {
     color: $expressive-color;
 
     &::before {
-          background: url("../img/breadcrumbs-icon-white.png") no-repeat 50% 50%;
+      background: url("../img/breadcrumbs-icon-white.png") no-repeat 50% 50%;
     }
   }
 
@@ -595,7 +588,6 @@ header {
   }
 }
 
-
 //m-about
 .m-about-items{
 
@@ -690,7 +682,6 @@ header {
       color: #4A5060;
       font-size: 12px;
       font-weight: 400;
-
     }
 
     a {
@@ -704,7 +695,6 @@ header {
 
   //slide gallery
   .slide-gallery {
-    // height: 350px;
     overflow:hidden;
 
     img {
@@ -749,7 +739,6 @@ header {
   width: 980px;
   font-size: 0;
   overflow: hidden;
-  // background: #ccc;
 
   * {
     box-sizing: border-box;
