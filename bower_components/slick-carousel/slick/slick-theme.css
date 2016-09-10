@@ -125,14 +125,14 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: 55px;
-    left: 15px;
+    bottom: 20px;
+    left: 18px;
 
     display: block;
 
@@ -243,8 +243,8 @@
     background:url("../../../img/dots-white.png") 50% 50% no-repeat;
 }
 
-@media all and (max-width: 812px) {
+/*@media all and (max-width: 812px) {
   .slick-dots {
     bottom: 100px;
   }
-}
+}*/

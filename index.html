@@ -39,11 +39,25 @@
         list-style-position: inside;
     }
 
+    li {
+      position: relative;
+      padding-left: 25px;
+    }
+
+    .corrected::before {
+      content: '⌘';
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+    }
+
     section {
         margin: 50px auto;
         max-width: 400px;
         background: rgba(0, 0, 0, .4);
         padding: 40px 60px;
+        /*padding-left: 0;*/
         border-radius: 6px;
     }
 
@@ -63,11 +77,11 @@
     <h1>Restconcept</h1>
 
     <ol>
-        <li><a href="home.html">Главная</a></li>
+        <li class="corrected"><a href="home.html">Главная</a></li>
         <li><a href="open-start-up.html">Открыть Start-Up</a></li>
         <li><a href="engineering.html">Проектирование</a></li>
         <li><a href="interior-design.html">Дизайн интерьера</a></li>
-        <li><a href="planning-and-repair.html">Планировка и ремонт</a></li>
+        <li class="corrected"><a href="planning-and-repair.html">Перепланировка и ремонт</a></li>
         <li><a href="branding-and-advertising.html">Брендинг и реклама</a></li>
         <li><a href="about.html">О компании</a></li>
         <li><a href="portfolio.html">Портфолио</a></li>
@@ -75,11 +89,11 @@
         <li><a href="contacts.html">Контакты</a></li>
         <li><a href="team.html">Наша команда</a></li>
         <li><a href="calculator.html">Калькулятор дизайн-проекта</a></li>
-        <li><a href="style-restaurant.html">Фирменный стиль ресторана</a></li>
+        <li class="corrected"><a href="style-restaurant.html">Фирменный стиль ресторана</a></li>
         <li><a href="restaurant-design.html">Дизайн ресторанов</a></li>
-        <li><a href="planning-and-repair.html">Дизайн упаковки для ресторана</a></li>
-        <li><a href="signs.html">Изготовление вывесок для ресторанов</a></li>
-        <li><a href="menu-boards.html">Изготовление меню-бордов</a></li>
+        <li class="corrected"><a href="packaging-for-restaurants.html">Дизайн упаковки для ресторана</a></li>
+        <li class="corrected"><a href="signs.html">Изготовление вывесок для ресторанов</a></li>
+        <li class="corrected"><a href="menu-boards.html">Изготовление меню-бордов</a></li>
         <li><a href="engineering-2.html">Проектирование ресторана</a></li>
 
         <li><a href="restaurant-concept.html">Концепция ресторана</a></li>

@@ -220,9 +220,10 @@ header {
 
 //h-header
 .h-header{
+  padding-bottom: 1px;
 
   &-layout {
-    padding: 23px 23px 25px;
+    padding: 23px 23px 20px;
 
     &::after {
       @extend %clear;
@@ -236,6 +237,20 @@ header {
 
     @media all and (max-width: 460px) {
       display: none;
+    }
+  }
+
+  &-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 36px;
+    // text-align: center;
+    text-transform: uppercase;
+    color: $white-color;
+    margin: 0;
+    margin-bottom: 15px;
+
+    @media all and (max-width: 580px) {
+      // font-size: 32px;
     }
   }
 
@@ -416,7 +431,7 @@ header {
 
 
 //m-breadcrumbs
-.m-breadcrumbs{
+.m-breadcrumbs {
   margin-bottom: 10px;
   font-size: $font-size-small;
 
@@ -427,6 +442,7 @@ header {
   .activ {
     color: $expressive-color;
   }
+
 
   &-title {
     position: relative;
@@ -447,6 +463,28 @@ header {
 
   .divider {
     margin: 0 2px;
+  }
+}
+
+.m-breadcrumbs-home {
+
+  // text-align: center;
+  margin-top: 14px;
+
+  .m-breadcrumbs-title {
+    color: $expressive-color;
+
+    &::before {
+          background: url("../img/breadcrumbs-icon-white.png") no-repeat 50% 50%;
+    }
+  }
+
+  a {
+    color: $white-color;
+  }
+
+  .divider {
+    color: $white-color;
   }
 }
 
@@ -955,10 +993,15 @@ header {
   &-form {
     width: 535px;
     float: right;
-    padding: 43px 0 24px;
+    padding: 20px 0 24px;
 
     &::after {
       @extend %clear;
+    }
+
+    &-title {
+      font-size: 28px;
+      margin-bottom: 15px;
     }
   }
 

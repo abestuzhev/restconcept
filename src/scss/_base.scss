@@ -121,6 +121,29 @@ label {
   // position: static;
 }
 
+.restconcept-small-button-layout {
+  text-align: center;
+}
+.restconcept-small-button {
+  display: inline-block;
+  padding: 7px 17px;
+  color: #202020;
+  font-size: 12px;
+  margin: 0 auto;
+  font-weight: 400;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: 1px solid #C8C8C8;
+  @extend %transition;
+
+  &:hover {
+    border: 1px solid $expressive-color;
+  }
+
+  &:hover {
+    color: $expressive-color;
+  }
+}
 
 .subtitle {
   color: $font-color;
@@ -147,7 +170,7 @@ label {
     height: 343px;
     display: inline-block;
     margin-right: 6px;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     position: relative;
     background-color: $font-color;
 
@@ -168,6 +191,7 @@ label {
       color: $white-color;
       background-color: $expressive-color;
     }
+
 
     &:hover .restconcept-item-button::after{
       background: url("../img/button-icon-white.png") no-repeat 50% 50%;
@@ -202,11 +226,53 @@ label {
       }
     }
 
+    .restconcept-item-btn-layout {
+      position: absolute;
+      bottom: 13px;
+      left: 0;
+
+      .restconcept-item-btn-several {
+        display: inline-block;
+        padding: 13px 9px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: $restconcept-font-color;
+        background-color: $white-color;
+        @extend %transition;
+
+        &:hover {
+          color: $white-color;
+          background-color: $expressive-color;
+        }
+
+        &:hover::after {
+          background: url("../img/button-icon-white.png") no-repeat 50% 50%;
+        }
+
+        &:last-child {
+          margin-top: 8px;
+        }
+
+        &::after {
+          @extend %transition;
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 3px;
+          margin-top: -2px;
+          width: 10px;
+          height: 6px;
+          background: url("../img/button-icon.png") no-repeat 50% 50%;
+        }
+      }
+    }
+
     &-button {
       position: absolute;
-      bottom:13px;
+      bottom: 13px;
+      font-size: 13px;
       left: 0;
-      padding: 13px;
+      padding: 13px 9px;
       text-transform: uppercase;
       background-color: $white-color;
       color: $restconcept-font-color;
@@ -225,11 +291,6 @@ label {
       }
     }
 
-    .restconcept-layout .number-2 {
-      position: absolute;
-      left: 0;
-      top: 43px;
-    }
     &-hover {
       zoom: 1;
       filter: alpha(opacity=100);
