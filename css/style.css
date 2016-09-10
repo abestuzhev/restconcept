@@ -2402,7 +2402,8 @@ header {
   display: none; }
 
 .ls-wrapper .panel-wrapper {
-  padding-left: 0; }
+  padding-left: 0;
+  padding-bottom: 0px; }
 
 .ls-nav ul li a {
   background-color: transparent;

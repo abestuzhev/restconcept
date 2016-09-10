@@ -65,7 +65,6 @@
 }
 .panel-wrapper {
   padding: 15px 40px;
-  padding-bottom: 25px;
   position:relative;
 }
 
@@ -206,7 +205,7 @@
   z-index: 2;
 }
 .ls-responsive .ls-nav-right-arrow {
-  position: absolute;
+  /*position: absolute;*/
   right: 0;
   z-index: 2;
 }
