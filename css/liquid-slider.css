@@ -183,7 +183,7 @@
   height: 24px;
   background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   position:relative;
 }
 .ls-nav-right-arrow {
