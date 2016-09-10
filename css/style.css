@@ -2404,6 +2404,8 @@ header {
 .ls-wrapper .panel-wrapper {
   padding-left: 0;
   padding-bottom: 0px; }
+  .ls-wrapper .panel-wrapper p:last-child {
+    margin-bottom: 0; }
 
 .ls-nav ul li a {
   background-color: transparent;
