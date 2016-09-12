@@ -632,7 +632,8 @@ label {
       color: #4A5060;
       font-size: 15px;
       border-bottom: 1px dotted #000080;
-      position: relative; }
+      position: relative;
+      text-transform: none; }
       .submenu-list li a::after {
         content: '';
         display: none;

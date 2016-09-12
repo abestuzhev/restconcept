@@ -141,6 +141,7 @@
        font-size: $font-size-default;
        border-bottom: 1px dotted #000080;
        position: relative;
+       text-transform: none;
        @extend %transition;
 
        &::after {
