@@ -632,6 +632,7 @@ label {
       color: #4A5060;
       font-size: 15px;
       border-bottom: 1px dotted #000080;
+      text-transform: none;
       position: relative; }
       .submenu-list li a::after {
         content: '';
