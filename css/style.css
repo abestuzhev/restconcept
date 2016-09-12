@@ -632,8 +632,13 @@ label {
       color: #4A5060;
       font-size: 15px;
       border-bottom: 1px dotted #000080;
+<<<<<<< HEAD
       position: relative;
       text-transform: none; }
+=======
+      text-transform: none;
+      position: relative; }
+>>>>>>> origin/master
       .submenu-list li a::after {
         content: '';
         display: none;
