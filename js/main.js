@@ -8,6 +8,7 @@ $(window).bind('load', function() {
 
 $(function(){
 
+
   var tPosition = 0;
   console.log(tPosition);
 
@@ -92,6 +93,28 @@ $(document).ready(function(){
        image_path = $item.data('big-image');
    $('.slider-gallery-item__big-image img').attr('src', image_path);
    $item.addClass('is-active').siblings().removeClass('is-active');
+ });
+
+
+ //popup
+
+ $('.js-popap-call').on('click', function(e) {
+   e.preventDefault();
+   $('.shim').addClass('js-popap-show');
+   $('body').addClass('lock');
+   $('.popap-input--name').focus();
+ });
+
+ $('.popap_close').on('click', function(e) {
+   e.preventDefault();
+   $('.shim').removeClass('js-popap-show');
+   $('body').removeClass('lock');
+ });
+
+ $('.shim').on('click', function(e) {
+   e.preventDefault();
+   $('.shim').removeClass('js-popap-show');
+   $('body').removeClass('lock');
  });
 
 });

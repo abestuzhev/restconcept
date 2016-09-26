@@ -61,7 +61,7 @@
               <div class="contact-item-1">
                 <div class="h-header-number">+7 (800) 555-57-09; +7 (495) 540-57-09</div>
                 <div class="h-header-email">email@mail.ru</div>
-                <a href="#" class="h-header-link">Заказать обратный звонок</a>
+                <a href="#" class="h-header-link js-popap-call">Заказать обратный звонок</a>
               </div>
               <div class="contact-item-2">
                 <div class="h-header-address">г. Москва, ул.Орджоникидзе, дом 11, стр 11, офис 901</div>
@@ -634,7 +634,32 @@
     </div>
     <!--END f-footer-->
 
-<!-- slider-text -->
+<div class="shim">
+  <div class="popap">
+    <div class="popap_img"></div>
+    <div class="popap_form">
+      <h3 class="popap_title">Студия Restconcept</h3>
+      <form action="#">
+        <div class="popap_field">
+          <label for="name" class="popap_name">Имя:</label>
+          <input type="text" class="popap-input popap-input--name" id="name" placeholder="Елена">
+        </div>
+        <div class="popap_field popap_field--phone">
+          <label for="phone" class="popap_phone">Телефон:</label>
+          <input type="tel" class="popap-input" id="phone" placeholder="+7 (953) 968-52-14">
+        </div>
+        <div class="popap_field">
+          <label for="time" class="popap_time">Желаемое время звонка</label>
+          <input type="text" class="popap-input popap-input--time" id="time" placeholder="с 7 до 9 часов">
+        </div>
+        <span class="popap_text">* По возможности укажите желаемое время звонка</span>
+        <button class="popap_button">Позвоните мне!</button>
+        <a href="#" class="popap_close"></a>
+      </form>
+    </div>
+  </div>
+</div>
+
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
