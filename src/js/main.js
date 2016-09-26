@@ -110,11 +110,4 @@ $(document).ready(function(){
    $('.shim').removeClass('js-popap-show');
    $('body').removeClass('lock');
  });
-
- $('.shim').on('click', function(e) {
-   e.preventDefault();
-   $('.shim').removeClass('js-popap-show');
-   $('body').removeClass('lock');
- });
-
 });
